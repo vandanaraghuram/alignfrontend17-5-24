@@ -1,0 +1,22 @@
+.view_detail{
+    width:100%;
+min-height: 100vh;
+  background-color: rgb(6, 6, 6);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.view_table{
+    width:80%;
+    min-height: 80vh;
+    
+}
+.main{
+width:97%;
+  background-color: rgb(6, 6, 6);
+    
+}
+.first{
+background-color: black;
+}

@@ -1,0 +1,44 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Bebas+Neue&family=IBM+Plex+Sans+Condensed:wght@500&family=Jura:wght@300&family=Kanit:wght@500&family=Merienda:wght@300&family=Patua+One&family=Permanent+Marker&family=Poppins:wght@100&family=Raleway:ital,wght@0,600;0,700;1,400&family=Roboto+Mono:wght@700&family=Russo+One&family=Young+Serif&display=swap');
+
+.start{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.893), rgba(11, 10, 5, 0.701)), url("https://i.postimg.cc/QtYVDTPj/pexels-leah-kelley-6480707.jpg");
+    background-size:cover;
+    background-position: 50%;
+    height: 100vh;
+  }
+
+  
+
+  .about{
+    background-image: linear-gradient(rgb(13, 13, 13),rgba(0, 0, 0, 0.788));
+    
+  }
+
+  .vl{
+    border-right: 2px solid wheat;
+    height: 180px;
+  }
+  
+.clients{
+  background-image: linear-gradient(rgba(13, 13, 13),rgba(0, 0, 0, 0.966));
+
+}
+
+
+.glass{
+  background: rgb(65, 65, 65);
+  background: linear-gradient(
+    to right bottom,
+    rgba(255,255,255,0.4),
+    rgba(255,255,255,0.2)
+    );
+  backdrop-filter: blur(1rem);
+}
+
+
+.review{
+  font-family: 'Merienda', cursive;
+
+}

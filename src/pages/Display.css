@@ -1,0 +1,12 @@
+.display{
+    min-height: 120vh;
+    width: 100%;
+    background-color: black;
+    
+}
+
+.signup{
+    height: 160vh;
+    background-image: linear-gradient(black,rgb(0, 0, 0));
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}

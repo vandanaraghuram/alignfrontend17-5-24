@@ -1,0 +1,20 @@
+.contact{
+    background-color: black;
+    height: 115vh;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    
+}
+.head{
+    font-size: 100px;
+    color:white;
+}
+
+input{
+    background-color: black;
+    border-bottom:  2px solid rgb(63, 63, 63);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 65%;
+}
+

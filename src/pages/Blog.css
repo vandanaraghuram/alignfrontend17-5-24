@@ -1,0 +1,9 @@
+.main{
+    background-color: black;
+    min-height: 100vh;
+   font-family: 'IBM Plex Sans Condensed', sans-serif;;
+}
+
+.head{
+    font-size: 70px;
+}
