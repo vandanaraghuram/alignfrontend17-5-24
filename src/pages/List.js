@@ -23,12 +23,12 @@ function List() {
     return (
 
         <div className='first' style={{ padding: '1rem 0' }}>
-            <div className='main'>
+         
             <Header></Header>
-            </div>
+        
             <div className='view_detail'>
-            <h1 className='mb-4 mt-5 text-center text-white fw-bolder'>ENQUIRED LIST</h1>
-            <div className='view_table'>
+            <h1 className=' text-center text-white fw-bolder mt-5'>ENQUIRED LIST</h1>
+            <div className='view_table mt-5'>
                 {quotes.length > 0 ? (
                     <Table striped bordered responsive hover variant="dark" className=''>
 

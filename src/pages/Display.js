@@ -34,10 +34,11 @@ function Display() {
 
 
     const getWorks = async () => {
-        const { data } = await getAllWorks()
-        // console.log(data);
+      const { data } = await getAllWorks()
+        console.log(data);
         setDisplay(data)
     }
+    
     console.log(display);
 
 // api for quote
@@ -62,7 +63,7 @@ const handleSubmit=async(e)=>{
 
 
     return (
-        <div className='display '   style={{ padding: '1rem 0' }}>
+        <div className='display ' style={{ padding: '1rem 0' }}>
 <Header></Header>
             <h1 className='text-center p-2' style={{ fontSize: '60px', color: 'white', fontWeight: '700' }}>OUR WORKS</h1>
             <Row>

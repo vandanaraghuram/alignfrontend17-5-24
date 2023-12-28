@@ -13,7 +13,7 @@ function Blog() {
             </div>
             <Row>
                 <Col className='md-6 lg-6'  >
-                    <img src="https://i.postimg.cc/sDYn8rbK/pexels-magda-ehlers-9890979.jpg" alt="" style={{height:'500px', width:'500px', marginLeft:'30px', marginTop:'60px'}} />
+                    <img src="https://i.postimg.cc/sDYn8rbK/pexels-magda-ehlers-9890979.jpg" alt="" style={{ marginLeft:'30px', marginTop:'60px'}} />
                 </Col>
                 <Col className='md-5 lg-5 '>
                     <div className=' mt-5'>
@@ -62,7 +62,7 @@ On the North West part of Forest Hills an escarpment facing both the sea and the
                     </div>
                 </Col >
                 <Col className='md-6 lg-6'  >
-                    <img src="https://i.postimg.cc/9QgwWLkK/pexels-sebastian-s-rensen-731082.jpg" alt="" style={{height:'500px', width:'500px', marginRight:'30px', marginTop:'60px'}} />
+                    <img src="https://i.postimg.cc/9QgwWLkK/pexels-sebastian-s-rensen-731082.jpg" alt="" style={{ marginRight:'30px', marginTop:'60px'}} />
                 </Col>
                 
 

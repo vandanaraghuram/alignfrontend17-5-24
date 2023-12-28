@@ -7,3 +7,18 @@
 .head{
     font-size: 70px;
 }
+img{
+    height: 500px;
+    width: 500px;
+}
+
+@media screen and (max-width: 600px) {
+    img{
+        height: 250px;
+        width: 250px;
+        margin-left: 5%;
+    }
+    .main{
+        width: 100%;
+    }
+  }

@@ -112,7 +112,7 @@ function Home() {
             data-aos-duration="1300" style={{ width: '6rem', backgroundColor: 'transparent', border: 'none' }}>
             <Card.Img variant="top" src="https://i.postimg.cc/KcD1dnzS/Enj3o-Q8-WMAA5r-NT.jpg" style={{ borderRadius: '80px', height: '5.5rem' }} />
             <Card.Body>
-              <Card.Title style={{ fontSize: '12px', color: 'peru' }}>Surya Sivakumar</Card.Title>
+              {/* <Card.Title style={{ fontSize: '12px', color: 'peru' }}>Surya Sivakumar</Card.Title> */}
             </Card.Body>
           </Card>
 
@@ -120,7 +120,7 @@ function Home() {
             data-aos-duration="1500" style={{ width: '6rem', backgroundColor: 'transparent', border: 'none', marginLeft: '15px' }}>
             <Card.Img variant="top" src="https://i.postimg.cc/vBJ2wJHh/images-8.jpg" style={{ borderRadius: '80px', height: '5.5rem' }} />
             <Card.Body>
-              <Card.Title style={{ fontSize: '12px', color: 'peru' }}>Hrithik Roshan</Card.Title>
+              {/* <Card.Title style={{ fontSize: '12px', color: 'peru' }}>Hrithik Roshan</Card.Title> */}
             </Card.Body>
           </Card>
 
@@ -128,7 +128,7 @@ function Home() {
             data-aos-duration="1700" style={{ width: '6rem', backgroundColor: 'transparent', border: 'none', marginLeft: '15px' }}>
             <Card.Img variant="top" src="https://i.postimg.cc/XqhjW7Bh/highest-paid-actors.webp" style={{ borderRadius: '80px', height: '5.5rem' }} />
             <Card.Body>
-              <Card.Title style={{ fontSize: '12px', color: 'peru' }}>Tom Cruise</Card.Title>
+              {/* <Card.Title style={{ fontSize: '12px', color: 'peru' }}>Tom Cruise</Card.Title> */}
             </Card.Body>
           </Card>
 
@@ -136,7 +136,7 @@ function Home() {
             data-aos-duration="1900" style={{ width: '6rem', backgroundColor: 'transparent', border: 'none', marginLeft: '15px' }}>
             <Card.Img variant="top" src="https://i.postimg.cc/RZXxcZXH/images-9.jpg" style={{ borderRadius: '80px', height: '5.5rem' }} />
             <Card.Body>
-              <Card.Title style={{ fontSize: '12px', color: 'peru' }}>Emma Stone</Card.Title>
+              {/* <Card.Title style={{ fontSize: '12px', color: 'peru' }}>Emma Stone</Card.Title> */}
             </Card.Body>
           </Card>
 
@@ -144,7 +144,7 @@ function Home() {
             data-aos-duration="2300" style={{ width: '6rem', backgroundColor: 'transparent', border: 'none', marginLeft: '15px' }}>
             <Card.Img variant="top" src="https://i.postimg.cc/XqfKMN8g/Whats-App-Image-2023-11-14-at-1-57-10-PM.jpg" style={{ borderRadius: '80px', height: '5.5rem' }} />
             <Card.Body>
-              <Card.Title style={{ fontSize: '12px', color: 'peru' }}>Shahrukh Khan</Card.Title>
+              {/* <Card.Title style={{ fontSize: '12px', color: 'peru' }}>Shahrukh Khan</Card.Title> */}
             </Card.Body>
           </Card>
 
@@ -152,7 +152,7 @@ function Home() {
             data-aos-duration="2500" style={{ width: '6rem', backgroundColor: 'transparent', border: 'none', marginLeft: '15px' }}>
             <Card.Img variant="top" src="https://i.postimg.cc/nh7QzNkg/images-11.jpg" style={{ borderRadius: '80px', height: '5.5rem' }} />
             <Card.Body>
-              <Card.Title style={{ fontSize: '12px', color: 'peru' }}>Aalia Bhatt</Card.Title>
+              {/* <Card.Title style={{ fontSize: '12px', color: 'peru' }}>Aalia Bhatt</Card.Title> */}
             </Card.Body>
           </Card>
 
@@ -160,7 +160,7 @@ function Home() {
             data-aos-duration="2700" style={{ width: '6rem', backgroundColor: 'transparent', border: 'none', marginLeft: '15px' }}>
             <Card.Img variant="top" src="https://i.postimg.cc/xd2t5w1V/images-12.jpg" style={{ borderRadius: '80px', height: '5.5rem' }} />
             <Card.Body>
-              <Card.Title style={{ fontSize: '12px', color: 'peru' }}>Cillian Murphy</Card.Title>
+              {/* <Card.Title style={{ fontSize: '8px', color: 'peru' }}>Cillian Murphy</Card.Title> */}
             </Card.Body>
           </Card>
         </div>
@@ -172,7 +172,7 @@ function Home() {
           activeIndex={index}
           onSelect={handleSelect}
           className='glass mb-5'
-          style={{ height: '190px', width: '1000px', backgroundColor: 'transparent' }}
+          style={{ height: '190px', backgroundColor: 'transparent' }}
         >
           <Carousel.Item>
             <img
