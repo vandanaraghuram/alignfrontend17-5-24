@@ -68,7 +68,7 @@ function Display() {
             <h1 className='text-center p-2 text-warning' style={{ fontSize: '60px', color: 'wheat', fontWeight: '700' }}>OUR WORKS</h1>
             <Row>
 
-                {display.length > 0 && display.map((i) => (
+                {display.length>0 && display.map((i) => (
                     <Col sm={12} md={6} lg={4} >
                         <Card data-aos="fade-up-left" data-aos-duration="1500" className='mt-5 mb-4 ms-4' style={{ width: '26rem', height: '40rem', backgroundColor: '#fcf6e1' }}>
                             <div>
