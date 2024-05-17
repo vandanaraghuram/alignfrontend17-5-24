@@ -9,7 +9,7 @@ function Blog() {
         <div className='main bg-black' style={{ padding: '1rem 0' }}>
             <Header></Header>
             <div>
-                <h1 className='head bg-black text-center p-3 fw-bolder'>OUR BLOG</h1>
+                <h1 className='head bg-black  text-center p-3 fw-bolder' style={{color:'wheat'}}>OUR BLOG</h1>
             </div>
             <Row>
                 <Col className='md-6 lg-6'  >

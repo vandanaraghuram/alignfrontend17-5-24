@@ -1,5 +1,5 @@
 import BASE_URL from './Baseurl';
-import { commonStructure } from './common';
+import {commonStructure } from './common';
 
 
 //api for admin register

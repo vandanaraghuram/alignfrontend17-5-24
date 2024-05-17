@@ -27,11 +27,11 @@ function Home() {
           <h1 className='fw-bolder ms-5 mt-5 ' style={{ fontSize: '100px', color: 'wheat' }}>YOU DREAM <br /> WE BUILD</h1>
 
         </div>
-        <p style={{ color: 'wheat' }} className='ms-5' data-aos="fade-up"
+        <p style={{ color: 'wheat' }} className='ms-5 mb-2' data-aos="fade-up"
           data-aos-duration="2000">Little by little day by day, what is meant for you will find its way </p>
         <Link to={'/Login'}>
           <div>
-            <Button className='ms-5 mt-4 fs-5' variant='outline-warning'>FOR MORE</Button>
+            <Button className='ms-5 mt-5 fs-5' variant='outline-warning'>FOR MORE</Button>
           </div>
 
         </Link>
@@ -42,10 +42,10 @@ function Home() {
         <hr style={{ color: 'wheat' }} /> */}
         <Row>
           <Col className='md-6 lg-6 d-flex align-items-center justify-content-center mt-5 ms-5' >
-            <p style={{ color: 'wheat' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aliquam necessitatibus commodi cupiditate perspiciatis tempora repellendus magni deleniti corrupti  <br />dolores aut, nostrum, asperiores aliquid obcaecati sit alias, porro iusto minus.</p>
+            <p style={{ color: 'wheat', marginTop:'70px' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aliquam necessitatibus commodi cupiditate perspiciatis tempora repellendus magni deleniti corrupti  <br />dolores aut, nostrum, asperiores aliquid obcaecati sit alias, porro iusto minus.</p>
           </Col>
           <Col className='md-6 lg-6 '>
-            <div className='d-flex align-items-center justify-content-start  mt-5'>
+            <div className='d-flex align-items-center justify-content-start ms-5  mt-5'>
               <h1 className='fw-bolder' style={{ fontSize: '80px', color: 'wheat' }}>WE DESIGN <br /> UNIQUE PLACES</h1>
 
             </div>
@@ -92,7 +92,7 @@ function Home() {
 
         <Row>
           <Col>
-            <div className='d-flex align-items-center justify-content-start' data-aos="fade-up"
+            <div className='' data-aos="fade-up"
               data-aos-duration="3000"
             >
               <h1 className='fw-bolder ms-5 mt-5 ' style={{ fontSize: '70px', color: 'wheat' }}>WHAT CLIENTS <br />SAYS  ABOUT US</h1>
@@ -107,7 +107,7 @@ function Home() {
           </Col>
         </Row>
 
-        <div className='d-flex  justify-content-evenly mt-5' >
+        <div className='cards d-flex  justify-content-evenly mt-5' >
           <Card data-aos="fade-left"
             data-aos-duration="1300" style={{ width: '6rem', backgroundColor: 'transparent', border: 'none' }}>
             <Card.Img variant="top" src="https://i.postimg.cc/KcD1dnzS/Enj3o-Q8-WMAA5r-NT.jpg" style={{ borderRadius: '80px', height: '5.5rem' }} />
@@ -167,7 +167,7 @@ function Home() {
 
 
 
-        <div className='testimoni d-flex align-items-center justify-content-center mt-4 '>
+        <div className='testimoni  mt-4 '>
         <Carousel
           activeIndex={index}
           onSelect={handleSelect}
@@ -179,7 +179,7 @@ function Home() {
               className='d-block'
               src='https://i.postimg.cc/d338Gwn9/186461.webp'
               alt='First slide'
-              style={{ height: '190px', width: '1000px', backgroundColor: 'transparent' }}
+              style={{ height: '190px', width: '500px', backgroundColor: 'transparent' }}
             />
             <Carousel.Caption>
               <h1 className='mb-4 review fs-3' style={{ color: 'peru' }}>"They did an amazing job remodeling our home"- <span className='fs-5'>Surya Sivakumar</span></h1>
@@ -190,7 +190,7 @@ function Home() {
               className='d-block'
               src='https://i.postimg.cc/d338Gwn9/186461.webp'
               alt='Second slide'
-              style={{ height: '190px', width: '1000px', backgroundColor: 'transparent' }}
+              style={{ height: '190px', width: '500px', backgroundColor: 'transparent' }}
             />
             <Carousel.Caption>
               <h1 className='mb-4 review' style={{ color: 'peru' }}>"Our home design is unique, beautiful and special"- <span className='fs-5'>Shahrukh Khan</span></h1>
@@ -201,7 +201,7 @@ function Home() {
               className='d-block'
               src='https://i.postimg.cc/d338Gwn9/186461.webp'
               alt='Third slide'
-              style={{ height: '190px', width: '1000px', backgroundColor: 'transparetn' }}
+              style={{ height: '190px', width: '500px', backgroundColor: 'transparetn' }}
             />
             <Carousel.Caption>
               <h1 className='mb-4 review' style={{ color: 'peru' }}>"Love how our home looks more comfy and modern"- <span className='fs-5'>Emma Stone</span></h1>

@@ -31,9 +31,11 @@ localStorage.clear()
           <Link className='text-decoration-none' to={'/'}>
             <Nav.Item className='navlink fs-4 ms-4'   >HOME</Nav.Item>
             </Link>
-            <Link className='text-decoration-none' to={'/services'}>
-            <Nav.Item className='navlink fs-4 ms-4 text-decoration-none' >WORKS</Nav.Item>
-            </Link>
+            {
+              !isloggedinData?<Link className='text-decoration-none' to={'/services'}>
+              <Nav.Item className='navlink fs-4 ms-4'>WORKS</Nav.Item>
+              </Link>:<Nav.Item className='navlink fs-4 ms-4'></Nav.Item>
+            }
             
             <Link className='text-decoration-none' to={'/blog'}>
             <Nav.Item className='navlink fs-4 ms-4 text-decoration-none' >BLOG</Nav.Item>
@@ -55,6 +57,11 @@ localStorage.clear()
 {
   isloggedinData?<Link className='text-decoration-none' to={'/works'}>
   <Nav.Item className='navlink fs-4 ms-4'>ADD</Nav.Item>
+  </Link>:<Nav.Item className='navlink fs-4 ms-4'></Nav.Item>
+}
+{
+  isloggedinData?<Link className='text-decoration-none' to={'/admindisplay'}>
+  <Nav.Item className='navlink fs-4 ms-4'>WORKS</Nav.Item>
   </Link>:<Nav.Item className='navlink fs-4 ms-4'></Nav.Item>
 }
             

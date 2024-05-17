@@ -94,93 +94,7 @@ function Works() {
 
 
     return (
-        // <div className='add_form_head bg-black'  style={{ padding: '1rem 0' }}>
-        //     <Header></Header>
-        //     <div>
-        //         <h1 className='d-flex justify-content-center' style={{ color: "white" }}>ADD WORKS</h1>
-        //         <Container className='container__wrapper'>
-        //             <form>
-        //                 <Row>
-        //                     <Col>
-
-        //                         <Form.Label className='label__style text-white' htmlFor="inputPassword5">Description </Form.Label>
-        //                         <Form.Control
-        //                             onChange={(e) => { workData(e) }}
-        //                             type="text"
-        //                             id="desn"
-        //                             name="description"
-        //                             aria-describedby="passwordHelpBlock"
-        //                         />
-        //                         <Form.Label className='label__style text-white' htmlFor="inputPassword5">Project Name</Form.Label>
-        //                         <Form.Control
-        //                             onChange={(e) => { workData(e) }}
-        //                             type="text"
-        //                             id="wnames"
-        //                             name="wname"
-        //                             aria-describedby="passwordHelpBlock"
-        //                         />
-        //                         <Form.Label className='label__style text-white' htmlFor="inputPassword5">Location</Form.Label>
-        //                         <Form.Control
-        //                             onChange={(e) => { workData(e) }}
-        //                             type="text"
-        //                             id="locations"
-        //                             name="location"
-        //                             aria-describedby="passwordHelpBlock"
-        //                         />
-        //                         <Form.Label className='label__style text-white' htmlFor="inputPassword5">Type of project</Form.Label>
-        //                         <Form.Control
-        //                             onChange={(e) => { workData(e) }}
-        //                             type="text"
-        //                             id="inputPassword55"
-        //                             name="wtype"
-        //                             aria-describedby="passwordHelpBlock"
-        //                         />
-        //                         <Form.Label className='label__style text-white' htmlFor="inputPassword5">Project Year</Form.Label>
-        //                         <Form.Control
-        //                             onChange={(e) => { workData(e) }}
-        //                             type="text"
-        //                             id="inputPassword58"
-        //                             name="year"
-        //                             aria-describedby="passwordHelpBlock"
-        //                         />
-
-        //                         <Form.Label className='label__style text-white' htmlFor="inputPassword5">Project size</Form.Label>
-        //                         <Form.Control
-        //                             onChange={(e) => { workData(e) }}
-        //                             type="text"
-        //                             id="inputPassword51"
-        //                             name="size"
-        //                             aria-describedby="passwordHelpBlock"
-        //                         />
-
-        //                         <Form.Label className='label__style text-white' htmlFor="inputPassword5">Project rate</Form.Label>
-        //                         <Form.Control
-        //                             onChange={(e) => { workData(e) }}
-        //                             type="text"
-        //                             id="inputPassword58"
-        //                             name="price"
-        //                             aria-describedby="passwordHelpBlock"
-        //                         />
-
-        //                         <Form.Label className='label__style text-white' htmlFor="inputPassword5">Project images</Form.Label>
-        //                         <Form.Control
-        //                             onChange={(e) => { chooseImage(e) }}
-        //                             type="file"
-        //                             id="inputPassword50"
-        //                             name="profile"
-        //                             aria-describedby="passwordHelpBlock"
-        //                         />
-        //                     </Col>
-
-        //                 </Row>
-
-        //                 <Row>
-        //                     <button onClick={handleData} className='btn  mb-4 mt-4 ' style={{ backgroundColor: 'white', color: 'black' }}>ADD WORKS</button>
-        //                 </Row>
-        //             </form>
-        //         </Container>
-        //     </div>
-        // </div>
+        
         <div style={{backgroundColor:'black', height:'70rem'}}>
       <section className="works">
         <div className=" d-flex align-items-center h-100">
@@ -234,7 +148,7 @@ function Works() {
                       </div>
 
                       <div className="form-outline mb-3">
-                        <input id="inputPassword50" onChange={(e) => chooseImage(e)} name='profile' type="file" className="form-control form-control-lg " />
+                        <input id="inputPassword50" onChange={(e) => chooseImage(e)} name='profile' type="text" className="form-control form-control-lg " />
                         <label className="form-label text-white" >Project Image</label>
                       </div>
 

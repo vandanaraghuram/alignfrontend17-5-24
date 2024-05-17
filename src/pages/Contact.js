@@ -54,6 +54,7 @@ const handleSubmit = (e) => {
           subject:""
         });
         alert("message send successfully");
+        
       })
       .catch((error) => {
         console.log("error", error);
@@ -73,30 +74,30 @@ const handleSubmit = (e) => {
   return (
     <div className='contact bg-black'  style={{ padding: '1rem 0' }} >
         <Header></Header>
-        <h1 className='head text-center pt-5'>Get In Touch</h1>
+        <h1 className='head text-center pt-5 text-warning'>Get In Touch</h1>
         <Row className='mt-5'>
 <Col className='md-3 lg-3 ms-5'>
     <form action="">
         <div>
-        <label style={{fontSize:'25px',color:'white'}} htmlFor="fullname">Full name</label> <br />
+        <label style={{fontSize:'25px',color:'wheat'}} htmlFor="fullname">Full name</label> <br />
         <input onChange={(e)=>{contactData(e)}} name='uname' type="text" className='text-white'  />
         </div>
         
         <div>
-        <label style={{fontSize:'25px',color:'white', marginTop:'50px'}} htmlFor="phn">Phone number</label> <br />
+        <label style={{fontSize:'25px',color:'wheat', marginTop:'50px'}} htmlFor="phn">Phone number</label> <br />
         <input onChange={(e)=>{contactData(e)}} name='phn' type="text" className='text-white'  />
         </div>
 
 
         <div>
-        <label style={{fontSize:'25px',color:'white', marginTop:'50px',border:'2px'}} htmlFor="message">Message</label> <br />
+        <label style={{fontSize:'25px',color:'wheat', marginTop:'50px',border:'2px'}} htmlFor="message">Message</label> <br />
         <p style={{color:'grey'}}>Tell us more about your project...</p>
         <input onChange={(e)=>{contactData(e)}} name='msg' type="textarea" className='text-white'  />
         </div>
         
     </form>
 
-    <Button variant='light ' onClick={handleSubmit} className='mt-5 btn-lg' style={{borderRadius:'40px'}}>SEND MESSAGE</Button>
+    <Button variant='warning'  onClick={handleSubmit} className='mt-5 btn-lg btn btn-outline-warning text-dark' style={{borderRadius:'40px'}}>SEND MESSAGE</Button>
 
 </Col>
 
@@ -105,12 +106,12 @@ const handleSubmit = (e) => {
 <Col className='md-3 lg-3 ms-5 mt-3' >
     <form action="">
         <div>
-        <label style={{fontSize:'25px',color:'white'}} htmlFor="fullname">Email address</label> <br />
+        <label style={{fontSize:'25px',color:'wheat'}} htmlFor="fullname">Email address</label> <br />
         <input name='email' onChange={(e)=>{contactData(e)}}  type="text" className='text-white'  />
         </div>
         
         <div>
-        <label style={{fontSize:'25px',color:'white', marginTop:'50px'}} htmlFor="phn">Subject</label> <br />
+        <label style={{fontSize:'25px',color:'wheat', marginTop:'50px'}} htmlFor="phn">Subject</label> <br />
         <input name='subject' onChange={(e)=>{contactData(e)}} type="text" className='text-white' placeholder="Eg:Decoration"  />
         </div>
 
@@ -124,29 +125,29 @@ const handleSubmit = (e) => {
 
 <Col className='col-md-5 col-lg-5  mt-3' >
     
-    <h4 style={{color:'white', marginLeft:'40px'}} >MORE CONTACT INFORMATION</h4>
+    <h4 style={{color:'wheat', marginLeft:'40px'}} >MORE CONTACT INFORMATION</h4>
     <p style={{color:'grey', marginLeft:'40px'}}>We are here to help and answer any question you might have <br />We look forward to hearing from you</p>
 
 <Row style={{marginTop:'50px'}}>
     <Col className='col-md-2 col-lg-2 me-0'>
 <div>
-<i className="fa-regular fa-2xl fa-envelope-open ms-5" style={{color: 'white', marginTop:'30px'}}></i>
+<i className="fa-regular fa-2xl fa-envelope-open ms-5" style={{color: 'wheat', marginTop:'30px'}}></i>
 </div>
     </Col>
     <Col className='col-md-10 col-lg-10 ms-0 fs-5'>
 <div>
-    <p style={{color:'grey'}}>Send us a message <br /> <span className='text-white'>aligndevelopers@gmail.com</span> </p> 
+    <p style={{color:'grey'}}>Send us a message <br /> <span style={{color:'wheat'}}>aligndevelopers@gmail.com</span> </p> 
    
 </div>
     </Col>
     <Col className='col-md-2 col-lg-2 me-0'>
 <div>
-<i class="fa-solid fa-phone-volume fa-2xl ms-5" style={{color: 'white', marginTop:'30px'}}></i>
+<i class="fa-solid fa-phone-volume fa-2xl ms-5" style={{color: 'wheat', marginTop:'30px'}}></i>
 </div>
     </Col>
     <Col className='col-md-10 col-lg-10 ms-0 fs-5'>
 <div>
-    <p  style={{color:'grey'}}>Give us a call <br /> <span className='text-white'>(+91) 7306600917</span> </p> 
+    <p  style={{color:'grey'}}>Give us a call <br /> <span style={{color:'wheat'}}>(+91) 7306600917</span> </p> 
    
 </div>
     </Col>

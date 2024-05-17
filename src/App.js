@@ -13,6 +13,8 @@ import Works from './pages/Works';
 import Display from './pages/Display';
 import List from './pages/List';
 import Blog from './pages/Blog';
+import Admindisplay from './pages/Admindisplay';
+import Adminedit from './pages/Adminedit';
 
 
 
@@ -38,6 +40,8 @@ aos.init()
         <Route path='/display' element={<Display/>}></Route>
         <Route path='/list' element={<List/>}></Route>
         <Route path='/blog' element={<Blog/>}></Route>
+        <Route path='/admindisplay' element={<Admindisplay/>}></Route>
+        <Route path='/adminedit' element={<Adminedit/>}></Route>
       </Routes>
     </div>
   );

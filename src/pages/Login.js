@@ -3,15 +3,10 @@ import './Login.css'
 import { Link } from 'react-router-dom'
 import { adminLogin } from '../Services/allApi'
 import { useNavigate } from 'react-router-dom'
-import { useContext } from "react";
-import { adminlogin } from '../components/LoginContext'
 import Header from '../components/Header'
 
 function Login() {
 
-
-  //context
-  const {setLoginData}=useContext(adminlogin)
 
   const [logInputs, setLogInputs] = useState({
     email: "",
@@ -64,9 +59,11 @@ function Login() {
     const result= await adminLogin(logInputs)
     console.log(result.data);
     if(result.status>=200 && result.status<=300){
-      setLoginData(true)
+      // setLoginData(true)
       localStorage.setItem("isloggedin",result.data.isAdmin)
+      localStorage.setItem("token",result.token)
       alert("Login Successful")
+      
       navigate('/')
 
     }
@@ -93,35 +90,37 @@ function Login() {
 
                   <div className="mb-md-5 mt-md-4 pb-5">
 
-                    <h2 className="fw-bold mb-2 text-uppercase">Login</h2>
+                    <h2 className="fw-bold mb-2 text-uppercase" style={{color:'wheat'}}>Login</h2>
                     <p className="text-white-50 mb-5">Please enter your email and password!</p>
 
-                    <div className="form-outline form-white mb-4">
-                      <input onChange={(e) => { loginData(e) }} type="email" name='email' class="form-control form-control-lg" />
-                      <label class="form-label" for="typeEmailX">Email</label>
+                    <div className="form-outline form-white mb-4" style={{color:'wheat'}}>
+                    <label class="form-label" for="typeEmailX">Email</label>
+                      <input onChange={(e) => { loginData(e) }} type="email" name='email' className="form-control form-control-lg" placeholder="Email Address" style={{outline:'none', border:'none',backgroundColor: '#ffdf87'}} />
+                     
                     </div>
 
-                    <div className="form-outline form-white mb-4">
-                      <input onChange={(e) => { loginData(e) }} type="password" name='psw' class="form-control form-control-lg" />
-                      <label className="form-label" for="typePasswordX">Password</label>
+                    <div className="form-outline form-white mb-4" style={{color:'wheat'}}>
+                    <label className="form-label" for="typePasswordX">Password</label>
+                      <input onChange={(e) => { loginData(e) }} type="password" name='psw' className="form-control form-control-lg " style={{outline:'none', border:'none',backgroundColor: '#ffdf87'}}  placeholder="Password" />
+                     
                     </div>
 
-                    <p className="small mb-5 pb-lg-2"><a class="text-white-50" >Forgot password?</a></p>
+                    {/* <p className="small mb-5 pb-lg-2"><a class="text-white-50" >Forgot password?</a></p> */}
 
-                    <button onClick={handleLogin} className="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+                    <button onClick={handleLogin} className="btn btn-outline-warning btn-lg px-5" type="submit">Login</button>
 
                     <div>
-                      <p style={{ fontSize: '15px', marginTop: '30px' }}>OR LOGIN WITH</p>
+                      <p className='text-white-50' style={{ fontSize: '15px', marginTop: '30px' }}>OR LOGIN WITH</p>
                     </div>
 
                     <div className="d-flex justify-content-center text-center mt-0 pt-1">
 
-                      <a className="text-white"><i className="fab fa-facebook-f fa-lg"></i></a>
-                      <a className="text-white"><i className="fab fa-twitter fa-lg mx-4 px-2"></i></a>
-                      <a className="text-white"><i className="fab fa-google fa-lg"></i></a>
+                      <a style={{color:'wheat'}}><i className="fab fa-facebook-f fa-lg"></i></a>
+                      <a style={{color:'wheat'}}><i className="fab fa-twitter fa-lg mx-4 px-2"></i></a>
+                      <a style={{color:'wheat'}}><i className="fab fa-google fa-lg"></i></a>
                     </div>
                     <Link className='text-decoration-none' to={'/signup'}>
-                      <p className=" mt-2 text-decoration-none">Dont have account? <a className="text-white-50 fw-bold text-decoration-none">Sign Up</a>
+                      <p className=" mt-2 text-decoration-none text-white-50">Dont have account? <a className="fw-bold text-decoration-none" style={{color:'wheat'}}>Sign Up</a>
                       </p>
                     </Link>
                   </div>

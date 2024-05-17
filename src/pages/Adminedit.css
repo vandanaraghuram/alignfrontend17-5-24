@@ -1,0 +1,16 @@
+
+
+body{
+    background-color: black;
+}
+
+    .works{
+        height: 160vh;
+        background-image: linear-gradient(black,rgb(0, 0, 0));
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+      
+    }
+    .card{
+        background-color: black;
+        
+    }

@@ -43,10 +43,25 @@
   font-family: 'Merienda', cursive;
 
 }
+.testimoni{
+  display: flex;
+  justify-content: center;
+align-items: center;
+}
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 900px) {
   .glass {
     width: 410px;
     
+  }
+  .testimoni{
+    width: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .cards{
+    width: 30rem;
   }
 }

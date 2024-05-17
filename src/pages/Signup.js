@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import './Signup.css'
 import { Adminregister } from '../Services/allApi'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Header from '../components/Header'
+
+
 
 function Signup() {
 
@@ -18,7 +20,7 @@ function Signup() {
   const [emailValid, setEmailValid] = useState(true)
   const [pswValid, setPswValid] = useState(true)
 
-  const navigate=useNavigate()
+  const navigate = useNavigate()
 
   const signupData = (e) => {
     const { name, value } = e.target
@@ -58,12 +60,12 @@ function Signup() {
       }
     }
 
-    
+
     //psw
 
     if (name === 'cpsw') {
-     setInputs({...inputs, [name]:value})
-      
+      setInputs({ ...inputs, [name]: value })
+
     }
 
   }
@@ -76,55 +78,55 @@ function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { uname, email, psw, cpsw } = inputs
-    if(uname==""){
+    if (uname == "") {
       alert("Username required ")
     }
 
-    else if(email==""){
+    else if (email == "") {
       alert("Email required ")
     }
 
-    else if(psw==""){
+    else if (psw == "") {
       alert("Password  required ")
     }
 
-    else if(cpsw==""){
+    else if (cpsw == "") {
       alert("Confirm password  required ")
     }
-    else{
-      if(psw==cpsw){
+    else {
+      if (psw == cpsw) {
         const result = await Adminregister(inputs)
-console.log(result);
+        console.log(result);
         alert("registered successfully")
         // console.log(result);
         navigate('/login')
       }
-      else{
+      else {
         alert("Password and confirm password must be same")
       }
     }
-    
 
-    
+
+
   }
 
   return (
     <div>
       <section className=" signup vh-100">
         <div className="mask d-flex align-items-center h-100">
-          <div className="container"  style={{ padding: '1rem 0' }}>
+          <div className="container" style={{ padding: '1rem 0' }}>
             <Header></Header>
             <div className="row d-flex justify-content-center align-items-center h-100">
               <div className="col-12 col-md-9 col-lg-7 col-xl-6">
                 <div className="card" style={{ borderRadius: '15px', height: '40rem', backgroundColor: 'black' }}>
                   <div className="card-body p-4">
-                    <h2 className="text-uppercase text-center text-white mb-5">Create your account</h2>
+                    <h2 className="text-uppercase text-center text-warning mb-5">Create your account</h2>
 
                     <form>
 
                       <div className="form-outline mb-3">
-                        <input onChange={(e) => signupData(e)} type="text" name='uname' className="form-control  form-control-lg" />
-                        <label className="form-label text-white" >Your Name</label>
+                        <input onChange={(e) => signupData(e)} type="text" name='uname' style={{ outline: 'none', border: 'none', backgroundColor: '#ffdf87' }} className="form-control  form-control-lg" />
+                        <label className="form-label text-warning" >Your Name</label>
                       </div>
                       {!unameValid &&
                         <div>
@@ -134,8 +136,8 @@ console.log(result);
 
 
                       <div className="form-outline mb-3">
-                        <input onChange={(e) => signupData(e)} type="email" name='email' className="form-control form-control-lg" />
-                        <label className="form-label text-white" >Your Email</label>
+                        <input onChange={(e) => signupData(e)} type="email" name='email' style={{ outline: 'none', border: 'none', backgroundColor: '#ffdf87' }} className="form-control form-control-lg" />
+                        <label className="form-label text-warning" >Your Email</label>
                       </div>
 
                       {!emailValid &&
@@ -144,28 +146,28 @@ console.log(result);
                         </div>}
 
                       <div className="form-outline mb-3">
-                        <input onChange={(e) => signupData(e)} type="password" name='psw' className="form-control form-control-lg " />
-                        <label className="form-label text-white" >Password</label>
+                        <input onChange={(e) => signupData(e)} type="password" name='psw' style={{ outline: 'none', border: 'none', backgroundColor: '#ffdf87' }} className="form-control form-control-lg " />
+                        <label className="form-label text-warning" >Password</label>
                       </div>
                       {!pswValid &&
                         <div>
                           <p className='text-danger'>*Invalid email</p>
                         </div>}
                       <div class="form-outline mb-3">
-                        <input onChange={(e) => signupData(e)} name='cpsw' type="password" className="form-control form-control-lg " />
-                        <label className="form-label text-white" >Repeat your password</label>
+                        <input onChange={(e) => signupData(e)} name='cpsw' style={{ outline: 'none', border: 'none', backgroundColor: '#ffdf87' }} type="password" className="form-control form-control-lg " />
+                        <label className="form-label text-warning" >Repeat your password</label>
                       </div>
 
 
 
                       <div className="d-flex justify-content-center">
                         <button type="button"
-                          className="btn btn-dark text-white text-light" onClick={handleSubmit}>REGISTER</button>
+                          className="btn btn-outline-warning w-50" onClick={handleSubmit}>REGISTER</button>
                       </div>
-
-                      <p className="text-center text-secondary mt-3 mb-0">Have already an account? <a href="#!"
-                        className="fw-bold  text-white"><u>Login here</u></a></p>
-
+                      <Link className='text-decoration-none' to={'/login'}>
+                        <p className="text-center text-secondary mt-3 mb-0">Have already an account? <a href="#!"
+                          className="fw-bold  text-warning" ><u>Login here</u></a></p>
+                      </Link>
                     </form>
 
                   </div>
